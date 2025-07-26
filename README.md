@@ -1,6 +1,5 @@
 # VISTA - Street Food Supply Chain Platform
 
-![VISTA Logo](VISTA-main/VISTA-main/public/images/vista-logo.png)
 
 **Connect. Supply. Grow.**
 
