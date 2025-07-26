@@ -1,17 +1,10 @@
-import twilio from 'twilio';
-
-const accountSid = process.env.TWILIO_SID || '';
-const authToken = process.env.TWILIO_AUTH_TOKEN || '';
-const twilioPhone = process.env.TWILIO_PHONE || '';
-
-const client = twilio(accountSid, authToken);
-
+// Demo OTP service - no external dependencies required
 const otpStore: Record<string, { otp: string; expires: number }> = {};
 
 export const sendOTP = async (phone: string) => {
   const otp = Math.floor(100000 + Math.random() * 900000).toString();
   otpStore[phone] = { otp, expires: Date.now() + 5 * 60 * 1000 };
-  console.log(`Mock OTP for ${phone}: ${otp}`);
+  console.log(`📱 Demo OTP sent to ${phone}: ${otp}`);
   return true;
 };
 

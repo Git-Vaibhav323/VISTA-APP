@@ -4,10 +4,10 @@ A logistics-focused B2B web app backend connecting Indian street food vendors an
 
 ## Tech Stack
 - Node.js + TypeScript + Express
-- MongoDB (Mongoose)
+- Firebase Firestore (replacing MongoDB)
 - JWT for authentication
 - Zod for validation
-- Twilio (OTP)
+- Demo OTP service (no external SMS API required)
 - Razorpay (Payments)
 - OpenAI (Sentiment Analysis)
 
@@ -15,7 +15,7 @@ A logistics-focused B2B web app backend connecting Indian street food vendors an
 - Vendor/Supplier roles, authentication
 - Live inventory, price tracking
 - Wallet system (load, refund, transfer)
-- OTP verification for orders
+- Demo OTP verification for orders (logs to console)
 - Delivery tracking
 - Group orders, backup vendor logic
 - Reviews with AI sentiment
@@ -30,29 +30,25 @@ A logistics-focused B2B web app backend connecting Indian street food vendors an
 ## .env Example
 ```
 PORT=5000
-MONGO_URI=your_mongodb_uri
+FIREBASE_SERVICE_ACCOUNT_PATH=./firebaseServiceAccountKey.json
 JWT_SECRET=your_jwt_secret
-TWILIO_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_PHONE=your_twilio_phone
 RAZORPAY_KEY_ID=your_razorpay_key_id
 RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-## API Keys
-- [Twilio](https://www.twilio.com/try-twilio)
-- [Razorpay](https://razorpay.com/signup)
-- [OpenAI](https://platform.openai.com/signup)
-- [MongoDB Atlas](https://cloud.mongodb.com)
+## API Keys (Optional for Demo)
+- [Razorpay](https://razorpay.com/signup) - for payments
+- [OpenAI](https://platform.openai.com/signup) - for sentiment analysis
+- [Firebase](https://console.firebase.google.com/) - for database
 
 ---
 
 ## Folder Structure
-- `src/models` - Mongoose models
+- `src/models` - Firebase Firestore collections
 - `src/controllers` - Route logic
 - `src/routes` - Express routes
 - `src/services` - Business logic
 - `src/middlewares` - Auth, validation, error handling
 - `src/utils` - Helpers
-- `src/config` - DB, env config 
+- `src/config` - Firebase, env config 
