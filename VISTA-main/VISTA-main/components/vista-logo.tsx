@@ -37,7 +37,7 @@ export function VistaLogo({ size = "md", className = "", showText = true }: Vist
           alt="VISTA Logo"
           width={dimensions.width}
           height={dimensions.height}
-          className="object-contain rounded-full"
+          className="object-contain rounded-full grayscale brightness-75"
           priority
         />
       </motion.div>
