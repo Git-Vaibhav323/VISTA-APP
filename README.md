@@ -123,16 +123,7 @@ VISTA/
 
 ## 🔧 Environment Variables
 
-### Backend (.env)
-```env
-PORT=5000
-JWT_SECRET=your_jwt_secret_here
 
-# Optional - For full functionality
-FIREBASE_SERVICE_ACCOUNT_PATH=./firebaseServiceAccountKey.json
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-OPENAI_API_KEY=your_openai_api_key
 ```
 
 ### Frontend (.env.local)
