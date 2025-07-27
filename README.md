@@ -46,7 +46,7 @@ A comprehensive B2B platform revolutionizing the Indian street food supply chain
 
 ### Additional Services
 - **Razorpay** (Payment Processing)
-- **OpenAI** (Sentiment Analysis for Reviews)
+- **GeminiAPI** (Sentiment Analysis for Reviews)
 
 ## 📦 Project Structure
 
@@ -121,7 +121,9 @@ VISTA/
    ```
    Frontend will run on `http://localhost:3000`
 
-
+### Frontend (.env.local)
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ```
 
 ## 🌐 API Endpoints
