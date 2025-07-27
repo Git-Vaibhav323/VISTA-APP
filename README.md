@@ -46,7 +46,7 @@ A comprehensive B2B platform revolutionizing the Indian street food supply chain
 
 ### Additional Services
 - **Razorpay** (Payment Processing)
-- **OpenAI** (Sentiment Analysis for Reviews)
+- **GeminiAPI** (Sentiment Analysis for Reviews)
 
 ## 📦 Project Structure
 
