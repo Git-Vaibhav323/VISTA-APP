@@ -209,7 +209,7 @@ The application includes demo features for testing:
 - **Vaibhav Dwivedi** - Node.js/Express.js API development, database design, and server-side logic
 
 ### Firebase
-- **Aryaman Kumar Singh** - Firebase Firestore integration, real-time database management, and cloud services
+- **Aryaman Kumar Singh** - Firebase Firestore integration, real-time mock database management, and cloud services
 
 ### UI/UX
 - **Soumya Goel** - User experience design, interface design, and visual design implementation
