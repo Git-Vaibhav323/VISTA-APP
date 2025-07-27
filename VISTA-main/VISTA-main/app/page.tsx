@@ -392,13 +392,14 @@ export default function HomePage() {
                     </Button>
                   </motion.div>
                 </Link>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8 py-6 hover:scale-105 transition-transform bg-transparent hover-lift border-gradient-hover hover:text-black hover:bg-white text-slate-700"
+                <a
+                  href="https://youtu.be/ua9L9Byfe2o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center h-11 px-8 py-6 text-lg font-medium border border-input bg-transparent hover:bg-accent hover:text-accent-foreground hover:scale-105 transition-transform hover-lift border-gradient-hover hover:text-black hover:bg-white text-slate-700 rounded-md"
                 >
                   Watch Demo
-                </Button>
+                </a>
               </motion.div>
 
               {/* Dynamic Feature Display */}
@@ -730,13 +731,14 @@ export default function HomePage() {
                     </Button>
                   </motion.div>
                 </Link>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8 py-6 hover:scale-105 transition-transform bg-transparent border-white text-white hover:bg-white/10"
+                <a
+                  href="https://youtu.be/ua9L9Byfe2o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center h-11 px-8 py-6 text-lg font-medium border border-white bg-transparent text-white hover:bg-white/10 hover:scale-105 transition-transform rounded-md"
                 >
-                  Schedule Demo
-                </Button>
+                  Watch Demo
+                </a>
               </div>
             </motion.div>
           </motion.div>
