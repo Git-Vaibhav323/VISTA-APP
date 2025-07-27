@@ -1,6 +1,5 @@
 # VISTA - Street Food Supply Chain Platform
 
-![VISTA Logo](VISTA-main/VISTA-main/public/images/vista-logo.png)
 
 **Connect. Supply. Grow.**
 
@@ -122,23 +121,7 @@ VISTA/
    ```
    Frontend will run on `http://localhost:3000`
 
-## 🔧 Environment Variables
 
-### Backend (.env)
-```env
-PORT=5000
-JWT_SECRET=your_jwt_secret_here
-
-# Optional - For full functionality
-FIREBASE_SERVICE_ACCOUNT_PATH=./firebaseServiceAccountKey.json
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-OPENAI_API_KEY=your_openai_api_key
-```
-
-### Frontend (.env.local)
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ```
 
 ## 🌐 API Endpoints
@@ -214,6 +197,23 @@ The application includes demo features for testing:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+## 👥 Team Contributions
+
+### Frontend
+- **Sahil Poply** - React/Next.js development, UI components, and user interface implementation
+
+### Backend
+- **Vaibhav Dwivedi** - Node.js/Express.js API development, database design, and server-side logic
+
+### Firebase
+- **Aryaman Kumar Singh** - Firebase Firestore integration, real-time database management, and cloud services
+
+### UI/UX
+- **Soumya Goel** - User experience design, interface design, and visual design implementation
+
+### API Keys & Configuration
+- **Suyash Agrawaal** - API integration, third-party service configuration, and security management
 
 ## 📄 License
 
