@@ -4,9 +4,15 @@
 set -e
 
 echo "🔧 Installing dependencies..."
-npm install --legacy-peer-deps
+npm ci --legacy-peer-deps
+
+echo "🔧 Verifying Next.js installation..."
+ls -la node_modules/.bin/next || echo "Next.js not found in node_modules/.bin"
+
+echo "🔧 Checking npm scripts..."
+npm run --silent
 
 echo "🔨 Building the application..."
-npm run build
+npx --yes next build
 
 echo "✅ Build completed successfully!" 
