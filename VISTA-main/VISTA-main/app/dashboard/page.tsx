@@ -138,8 +138,8 @@ export default function DashboardPage() {
       <AnimatedGridBackground
         className="relative overflow-hidden"
         gridSize={40}
-        gridColor="#3b82f6"
-        darkGridColor="#60a5fa"
+        gridColor="#14b8a6"
+        darkGridColor="#2dd4bf"
         fadeIntensity={25}
         animationSpeed={30}
       >
@@ -201,7 +201,7 @@ export default function DashboardPage() {
                     key={action.label}
                     variants={itemVariants}
                     whileHover={{ scale: 1.07 }}
-                    className="bg-gradient-to-br from-blue-600 via-blue-400 to-purple-500 rounded-xl p-6 flex flex-col items-center gap-3 shadow-md hover:shadow-xl transition-all cursor-pointer"
+                    className="bg-gradient-to-br from-teal-600 via-teal-400 to-teal-500 rounded-xl p-6 flex flex-col items-center gap-3 shadow-md hover:shadow-xl transition-all cursor-pointer"
                   >
                     <action.icon className="h-8 w-8 text-white mb-2" />
                     <span className="font-semibold text-lg text-white text-center">

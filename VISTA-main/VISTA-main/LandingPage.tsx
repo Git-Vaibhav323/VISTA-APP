@@ -3,14 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { VistaLogo } from "@/components/vista-logo";
 import { Users, Package, TrendingUp, Shield } from "lucide-react";
-import { AuroraTextEffect } from "@/components/ui/aurora-text-effect";
 
 export default function LandingPage() {
   return (
     <div className="relative min-h-screen bg-background overflow-x-hidden">
       {/* Animated Gradient Blur Background */}
       <div className="pointer-events-none fixed inset-0 z-0">
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[120vw] h-[60vh] bg-gradient-to-br from-[#7C3AED]/40 via-[#2563EB]/30 to-[#F97316]/20 blur-3xl opacity-70 rounded-full" />
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[120vw] h-[60vh] bg-gradient-to-br from-[#14B8A6]/40 via-[#0D9488]/30 to-[#2DD4BF]/20 blur-3xl opacity-70 rounded-full" />
       </div>
 
       {/* Navbar */}
@@ -28,13 +27,13 @@ export default function LandingPage() {
             <li>
               <a href="#features" className="relative px-2 py-1 text-muted-foreground hover:text-primary transition-colors group">
                 Features
-                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-[#7C3AED] to-[#2563EB] scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" />
+                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-teal-400 to-teal-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" />
               </a>
             </li>
             <li>
               <a href="#about" className="relative px-2 py-1 text-muted-foreground hover:text-primary transition-colors group">
                 About
-                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-[#7C3AED] to-[#2563EB] scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" />
+                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-teal-400 to-teal-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" />
               </a>
             </li>
           </ul>
@@ -42,7 +41,7 @@ export default function LandingPage() {
         {/* Get Started Button */}
         <div className="flex-1 flex items-center justify-end">
           <Link href="/login">
-            <Button className="bg-gradient-to-r from-[#2563EB] to-[#F97316] text-white rounded-full px-6 py-2 shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-200">
+            <Button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-full px-6 py-2 shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-200">
               Get Started
             </Button>
           </Link>
@@ -51,24 +50,15 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] pt-16 pb-12 px-4 text-center">
-        <AuroraTextEffect 
-          text="Revolutionizing\nStreet Food Supply"
-          fontSize="clamp(3rem, 8vw, 7rem)"
-          colors={{
-            first: "bg-purple-500",
-            second: "bg-blue-500", 
-            third: "bg-cyan-400",
-            fourth: "bg-indigo-500"
-          }}
-          className="w-full"
-          textClassName="text-center leading-tight"
-        />
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center leading-tight bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent">
+          Revolutionizing<br />Street Food Supply
+        </h1>
         <p className="mt-6 text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up delay-150">
           The all-in-one platform connecting street food vendors and suppliers for a smarter, faster, and more profitable supply chain.
         </p>
         <div className="mt-8 animate-fade-in-up delay-300">
           <Link href="/login">
-            <Button className="bg-gradient-to-r from-[#2563EB] to-[#F97316] text-white rounded-full px-8 py-4 text-lg font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-200">
+            <Button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-full px-8 py-4 text-lg font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-200">
               Get Started
             </Button>
           </Link>
@@ -76,32 +66,32 @@ export default function LandingPage() {
       </section>
 
       {/* Floating Animated Gradient Element */}
-      <div className="absolute right-0 top-1/3 w-60 h-60 bg-gradient-to-br from-[#F97316]/40 via-[#7C3AED]/30 to-[#2563EB]/20 rounded-full blur-2xl opacity-60 animate-pulse-slow z-0" />
+      <div className="absolute right-0 top-1/3 w-60 h-60 bg-gradient-to-br from-[#2DD4BF]/40 via-[#14B8A6]/30 to-[#0D9488]/20 rounded-full blur-2xl opacity-60 animate-pulse-slow z-0" />
 
       {/* Features Section */}
       <section id="features" className="relative z-10 py-20 px-4 md:px-0">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-[#7C3AED] to-[#2563EB] bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
             Platform Features
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
             <div className="flex flex-col items-center p-6 rounded-xl bg-background/80 shadow-md hover:shadow-lg transition-shadow">
-              <Users className="h-10 w-10 text-[#7C3AED] mb-4" />
+              <Users className="h-10 w-10 text-teal-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Real-time Vendor Network</h3>
               <p className="text-muted-foreground">Connect instantly with thousands of verified vendors and suppliers.</p>
             </div>
             <div className="flex flex-col items-center p-6 rounded-xl bg-background/80 shadow-md hover:shadow-lg transition-shadow">
-              <Package className="h-10 w-10 text-[#2563EB] mb-4" />
+              <Package className="h-10 w-10 text-teal-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Smart Inventory</h3>
               <p className="text-muted-foreground">Track, manage, and optimize your inventory with intelligent analytics.</p>
             </div>
             <div className="flex flex-col items-center p-6 rounded-xl bg-background/80 shadow-md hover:shadow-lg transition-shadow">
-              <TrendingUp className="h-10 w-10 text-[#F97316] mb-4" />
+              <TrendingUp className="h-10 w-10 text-teal-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Growth Insights</h3>
               <p className="text-muted-foreground">Unlock actionable insights to grow your business and revenue.</p>
             </div>
             <div className="flex flex-col items-center p-6 rounded-xl bg-background/80 shadow-md hover:shadow-lg transition-shadow">
-              <Shield className="h-10 w-10 text-[#7C3AED] mb-4" />
+              <Shield className="h-10 w-10 text-teal-700 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Secure Payments</h3>
               <p className="text-muted-foreground">All transactions are protected with bank-grade security and encryption.</p>
             </div>
@@ -112,7 +102,7 @@ export default function LandingPage() {
       {/* About Section */}
       <section id="about" className="relative z-10 py-20 px-4 md:px-0 bg-gradient-to-br from-muted/20 via-background to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-[#7C3AED] to-[#2563EB] bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
             About VISTA
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">

@@ -308,8 +308,8 @@ export default function HomePage() {
       <AnimatedGridBackground
         className="relative overflow-hidden"
         gridSize={40}
-        gridColor="#3b82f6"
-        darkGridColor="#60a5fa"
+        gridColor="#14b8a6"
+        darkGridColor="#2dd4bf"
         fadeIntensity={25}
         animationSpeed={30}
       >
